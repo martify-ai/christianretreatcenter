@@ -1,0 +1,585 @@
+/* 
+* Christian Retreat Centre - Booking Page Styles
+*/
+
+/* Booking Banner */
+.booking-banner {
+    background-color: var(--primary-color);
+}
+
+/* Booking Overview */
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--font-size-md);
+}
+
+/* Booking Process */
+.process-steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--medium-gray);
+    z-index: 1;
+}
+
+.process-step {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: var(--spacing-md);
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background-color: var(--white);
+    border: 2px solid var(--medium-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: var(--spacing-md);
+    transition: var(--transition-normal);
+}
+
+.step-title {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--dark-gray);
+}
+
+.step-description {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    padding: 0 var(--spacing-sm);
+}
+
+.process-step.active .step-number {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+.process-step.active .step-title {
+    color: var(--primary-dark);
+}
+
+.process-step.completed .step-number {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    color: var(--white);
+}
+
+/* Booking Form */
+.booking-form {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.form-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-section:last-child {
+    margin-bottom: 0;
+}
+
+.form-section-title {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.form-divider {
+    height: 1px;
+    background-color: var(--medium-gray);
+    margin: var(--spacing-lg) 0;
+}
+
+/* Date Picker */
+.date-picker {
+    margin-bottom: var(--spacing-lg);
+}
+
+.date-picker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.date-picker-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.date-picker-nav {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.date-picker-nav button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.date-picker-nav button:hover {
+    background-color: var(--primary-light);
+    color: var(--white);
+}
+
+.date-picker-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: var(--medium-gray);
+    border: 1px solid var(--medium-gray);
+}
+
+.calendar-day-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+}
+
+.calendar-day {
+    background-color: var(--white);
+    padding: var(--spacing-sm);
+    min-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.calendar-day:hover {
+    background-color: var(--light-accent);
+}
+
+.calendar-day.inactive {
+    background-color: var(--light-gray);
+    color: var(--gray);
+    cursor: not-allowed;
+}
+
+.calendar-day.selected {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.calendar-day.today {
+    border: 2px solid var(--primary-color);
+}
+
+.calendar-day.unavailable {
+    background-color: #f8d7da;
+    color: #721c24;
+    cursor: not-allowed;
+}
+
+.calendar-day.unavailable:hover {
+    background-color: #f8d7da;
+}
+
+/* Accommodation Selection */
+.accommodation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.accommodation-card {
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.accommodation-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+}
+
+.accommodation-card.selected {
+    border: 2px solid var(--primary-color);
+}
+
+.accommodation-image {
+    height: 180px;
+}
+
+.accommodation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accommodation-details {
+    padding: var(--spacing-md);
+}
+
+.accommodation-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.accommodation-title h3 {
+    margin-bottom: 0;
+    color: var(--primary-dark);
+}
+
+.accommodation-price {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.accommodation-features {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+}
+
+.accommodation-features span {
+    display: inline-block;
+    margin-right: var(--spacing-sm);
+    color: var(--gray);
+}
+
+.accommodation-features i {
+    margin-right: 3px;
+    color: var(--primary-color);
+}
+
+.accommodation-description {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    margin-bottom: var(--spacing-md);
+}
+
+.accommodation-availability {
+    font-size: var(--font-size-sm);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Meeting Spaces Selection */
+.meeting-spaces {
+    margin-bottom: var(--spacing-lg);
+}
+
+.meeting-space-item {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.meeting-space-item:hover {
+    background-color: var(--light-gray);
+}
+
+.meeting-space-item.selected {
+    border: 2px solid var(--primary-color);
+    background-color: rgba(77, 124, 64, 0.05);
+}
+
+.meeting-space-checkbox {
+    margin-right: var(--spacing-md);
+    margin-top: 3px;
+}
+
+.meeting-space-details {
+    flex: 1;
+}
+
+.meeting-space-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.meeting-space-title h4 {
+    margin-bottom: 0;
+    color: var(--primary-dark);
+}
+
+.meeting-space-price {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.meeting-space-info {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+}
+
+.meeting-space-info span {
+    color: var(--gray);
+}
+
+.meeting-space-info i {
+    margin-right: 3px;
+    color: var(--primary-color);
+}
+
+/* Additional Services */
+.additional-services {
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-checkbox {
+    margin-right: var(--spacing-md);
+    margin-top: 3px;
+}
+
+.service-details {
+    flex: 1;
+}
+
+.service-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-title h4 {
+    margin-bottom: 0;
+    font-size: var(--font-size-md);
+    color: var(--dark-gray);
+}
+
+.service-price {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.service-description {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+}
+
+/* Booking Summary */
+.booking-summary {
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+}
+
+.summary-title {
+    font-size: var(--font-size-lg);
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+}
+
+.summary-item-label {
+    color: var(--dark-gray);
+}
+
+.summary-item-value {
+    font-weight: 500;
+}
+
+.summary-subtotal {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-sm);
+    border-top: 1px dashed var(--medium-gray);
+}
+
+.summary-total {
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 2px solid var(--medium-gray);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.summary-total .summary-item-value {
+    color: var(--primary-color);
+}
+
+.summary-note {
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Payment Options */
+.payment-options {
+    margin-bottom: var(--spacing-lg);
+}
+
+.payment-method {
+    display: flex;
+    align-items: flex-start;
+    padding: var(--spacing-md);
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-md);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.payment-method:hover {
+    background-color: var(--light-gray);
+}
+
+.payment-method.selected {
+    border: 2px solid var(--primary-color);
+    background-color: rgba(77, 124, 64, 0.05);
+}
+
+.payment-radio {
+    margin-right: var(--spacing-md);
+    margin-top: 3px;
+}
+
+.payment-details {
+    flex: 1;
+}
+
+.payment-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.payment-title h4 {
+    margin-bottom: 0;
+    color: var(--primary-dark);
+}
+
+.payment-icons {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.payment-icons i {
+    font-size: var(--font-size-lg);
+    color: var(--gray);
+}
+
+.payment-description {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .process-steps::before {
+        display: none;
+    }
+    
+    .process-step {
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .accommodation-options {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .meeting-space-item {
+        flex-direction: column;
+    }
+    
+    .meeting-space-checkbox {
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .date-picker-calendar {
+        font-size: var(--font-size-sm);
+    }
+    
+    .calendar-day {
+        min-height: 40px;
+        padding: var(--spacing-xs);
+    }
+    
+    .meeting-space-info {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .service-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .service-price {
+        margin-top: var(--spacing-xs);
+    }
+}

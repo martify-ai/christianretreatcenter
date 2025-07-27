@@ -1,0 +1,399 @@
+/* 
+* Christian Retreat Centre - Services & Pricing Page Styles
+*/
+
+/* Services Banner */
+.services-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Retreat.jpg');
+}
+
+/* Services Overview */
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--font-size-md);
+}
+
+/* Retreat Packages */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.package-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    position: relative;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.package-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.package-card.featured:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+.package-tag {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    transform: rotate(45deg);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 30px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+.package-header {
+    background-color: var(--light-accent);
+    padding: var(--spacing-lg);
+    text-align: center;
+    position: relative;
+}
+
+.package-header h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.package-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.duration {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+}
+
+.package-body {
+    padding: var(--spacing-lg);
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.package-features li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: 30px;
+    position: relative;
+}
+
+.package-features li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: var(--primary-color);
+}
+
+.package-note {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    margin-bottom: var(--spacing-lg);
+    font-style: italic;
+}
+
+/* Additional Services */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-accent);
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    border-radius: 50%;
+    margin-right: var(--spacing-md);
+    flex-shrink: 0;
+}
+
+.service-details {
+    flex: 1;
+}
+
+.service-details h3 {
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-dark);
+}
+
+.service-price {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: var(--spacing-sm);
+}
+
+/* Meeting Spaces Pricing */
+.pricing-table {
+    overflow-x: auto;
+    margin-bottom: var(--spacing-lg);
+}
+
+.pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.pricing-table th, 
+.pricing-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.pricing-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-table tr:hover td {
+    background-color: var(--light-gray);
+}
+
+.pricing-note {
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    margin-top: var(--spacing-md);
+    font-style: italic;
+}
+
+/* Catering Services */
+.catering-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.catering-image {
+    flex: 1;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.catering-image img {
+    width: 100%;
+    height: auto;
+    transition: var(--transition-slow);
+}
+
+.catering-image:hover img {
+    transform: scale(1.03);
+}
+
+.catering-details {
+    flex: 1;
+}
+
+.catering-details h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.catering-details h3:first-child {
+    margin-top: 0;
+}
+
+.catering-details ul {
+    margin-bottom: var(--spacing-lg);
+}
+
+.catering-details li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Special Packages */
+.special-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.special-package {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.special-package:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.special-package h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.special-package ul {
+    margin-bottom: var(--spacing-lg);
+}
+
+.special-package li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.price-tag {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+/* Booking Information */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.info-item {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-accent);
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+}
+
+.info-item h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-dark);
+}
+
+.info-item ul {
+    margin-bottom: 0;
+}
+
+.info-item li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .catering-content {
+        flex-direction: column;
+    }
+
+    .catering-image {
+        margin-bottom: var(--spacing-lg);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .packages-grid,
+    .special-packages-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .package-card.featured {
+        transform: none;
+        margin: var(--spacing-lg) 0;
+    }
+    
+    .package-card.featured:hover {
+        transform: translateY(-5px);
+    }
+    
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service-icon {
+        margin-right: 0;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+@media (max-width: 576px) {
+    .info-item {
+        text-align: center;
+    }
+    
+    .pricing-table {
+        font-size: var(--font-size-sm);
+    }
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your stay at Christian Retreat Centre in Ago-Iwoye, Ikorodu - inquire about accommodations, facilities, and retreat packages for individuals and groups.">
+    <link rel="icon" href="/images/favicon.jpg" type="image/png">
+    <title>Book Your Stay | Christian Retreat Centre</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/Logo.jpg" alt="Christian Retreat Centre Logo">
+                    <span>Christian Retreat Centre</span>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner booking-banner">
+        <div class="banner-content">
+            <h1>Book Your Stay</h1>
+            <p>Reserve your retreat experience with us</p>
+        </div>
+    </section>
+
+    <!-- Booking Introduction -->
+    <section class="booking-intro section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plan Your Visit</h2>
+                <p>Simple steps to book your retreat</p>
+            </div>
+            <div class="intro-content">
+                <p>We're delighted you're considering a stay at our Christian Retreat Centre. Whether you're planning an individual retreat, a group gathering, or attending one of our events, we're here to make your booking process simple and straightforward.</p>
+                <p>Below you'll find our booking form where you can submit your inquiry. Our team will respond promptly to confirm availability, answer any questions, and guide you through the next steps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Process -->
+    <section class="booking-process section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Booking Process</h2>
+                <p>How it works</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3>Submit Inquiry</h3>
+                    <p>Fill out our booking form with your desired dates, group size, and retreat requirements.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3>Confirmation</h3>
+                    <p>We'll check availability and contact you within 48 hours to confirm details and answer questions.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3>Deposit</h3>
+                    <p>Secure your booking with a 50% deposit payment through our secure payment options.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span class="step-number">4</span>
+                    </div>
+                    <h3>Final Details</h3>
+                    <p>Complete your booking information and make final payment at least 7 days before arrival.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Booking Inquiry</h2>
+                    <p>Please provide the details of your planned visit</p>
+                </div>
+                <form id="booking-form">
+                    <div class="form-columns">
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">Organization/Church (if applicable)</label>
+                                <input type="text" id="organization" name="organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="group-size">Group Size <span class="required">*</span></label>
+                                <select id="group-size" name="group-size" required>
+                                    <option value="" disabled selected>Select group size</option>
+                                    <option value="1">Individual (1 person)</option>
+                                    <option value="2-5">Small Group (2-5 people)</option>
+                                    <option value="6-15">Medium Group (6-15 people)</option>
+                                    <option value="16-30">Large Group (16-30 people)</option>
+                                    <option value="31-50">Extra Large Group (31-50 people)</option>
+                                    <option value="51+">Conference Group (51+ people)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="arrival-date">Arrival Date <span class="required">*</span></label>
+                                <input type="date" id="arrival-date" name="arrival-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="departure-date">Departure Date <span class="required">*</span></label>
+                                <input type="date" id="departure-date" name="departure-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="accommodation-type">Accommodation Type <span class="required">*</span></label>
+                                <select id="accommodation-type" name="accommodation-type" required>
+                                    <option value="" disabled selected>Select accommodation type</option>
+                                    <option value="private-rooms">Private Rooms</option>
+                                    <option value="family-suites">Family Suites</option>
+                                    <option value="dormitories">Dormitories</option>
+                                    <option value="mixed">Mixed Accommodation Types</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="package">Package/Service <span class="required">*</span></label>
+                                <select id="package" name="package" required>
+                                    <option value="" disabled selected>Select package</option>
+                                    <option value="individual-retreat">Individual Retreat Package</option>
+                                    <option value="group-retreat">Group Retreat Package</option>
+                                    <option value="conference">Conference Package</option>
+                                    <option value="day-use">Day-Use Only (No Accommodation)</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="meal-plan">Meal Plan <span class="required">*</span></label>
+                                <select id="meal-plan" name="meal-plan" required>
+                                    <option value="" disabled selected>Select meal plan</option>
+                                    <option value="full-board">Full Board (3 meals daily)</option>
+                                    <option value="half-board">Half Board (Breakfast & Dinner)</option>
+                                    <option value="breakfast-only">Breakfast Only</option>
+                                    <option value="no-meals">No Meals</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purpose">Purpose of Visit <span class="required">*</span></label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="" disabled selected>Select the purpose of your visit</option>
+                            <option value="personal-retreat">Personal Spiritual Retreat</option>
+                            <option value="church-retreat">Church/Ministry Group Retreat</option>
+                            <option value="conference">Conference/Workshop</option>
+                            <option value="leadership-retreat">Leadership Retreat</option>
+                            <option value="youth-camp">Youth Camp/Retreat</option>
+                            <option value="marriage-retreat">Marriage Retreat</option>
+                            <option value="other">Other (please specify in comments)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="meeting-space">Meeting Space Required</label>
+                        <select id="meeting-space" name="meeting-space">
+                            <option value="" disabled selected>Select if you need meeting space</option>
+                            <option value="main-chapel">Main Chapel (up to 300 people)</option>
+                            <option value="conference-hall">Conference Hall (up to 150 people)</option>
+                            <option value="breakout-room">Breakout Room (up to 20 people)</option>
+                            <option value="outdoor-pavilion">Outdoor Pavilion (up to 100 people)</option>
+                            <option value="prayer-chapel">Prayer Chapel (up to 30 people)</option>
+                            <option value="multiple">Multiple Spaces (specify in comments)</option>
+                            <option value="none">No Meeting Space Needed</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additional-services">Additional Services Needed (select all that apply)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service-spiritual-direction" name="additional-services[]" value="spiritual-direction">
+                                <label for="service-spiritual-direction">Spiritual Direction</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service-bible-study" name="additional-services[]" value="bible-study">
+                                <label for="service-bible-study">Bible Study Facilitation</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service-transportation" name="additional-services[]" value="transportation">
+                                <label for="service-transportation">Transportation</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service-planning" name="additional-services[]" value="planning">
+                                <label for="service-planning">Retreat Planning Assistance</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service-worship" name="additional-services[]" value="worship">
+                                <label for="service-worship">Worship Team</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service-media" name="additional-services[]" value="media">
+                                <label for="service-media">Photography/Videography</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests or Comments</label>
+                        <textarea id="special-requests" name="special-requests" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group terms-agreement">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#" class="terms-link">terms and conditions</a> of the Christian Retreat Centre <span class="required">*</span></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Submit Booking Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking FAQs -->
+    <section class="booking-faqs section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about bookings</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2 weeks in advance for individual or small group retreats, and 1-3 months ahead for larger groups or events. For peak seasons (December-January, Easter period, and August), booking 3-6 months in advance is advisable to secure your preferred dates.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your cancellation policy?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our cancellation policy is as follows:</p>
+                        <ul>
+                            <li>Full refund for cancellations made 30 or more days before arrival</li>
+                            <li>75% refund for cancellations 15-29 days before arrival</li>
+                            <li>50% refund for cancellations 7-14 days before arrival</li>
+                            <li>No refund for cancellations less than 7 days before arrival</li>
+                        </ul>
+                        <p>Special circumstances may be considered on a case-by-case basis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I visit before booking for a large group?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we encourage site visits for group organizers. Please contact us to arrange a convenient time to tour our facilities. This helps you better understand the space and plan accordingly for your group's needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide bedding and towels?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all accommodation options include bedding (sheets, pillows, blankets). Towels are provided for guests in private rooms and family suites. For dormitory accommodations, we recommend bringing your own towels, though a limited supply is available upon request.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can you accommodate special dietary requirements?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we can accommodate various dietary needs including vegetarian, vegan, gluten-free, and most allergies with advance notice. Please specify any special dietary requirements in your booking form at least one week before arrival. An additional charge of 10% may apply for specialized meal preparations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Policies -->
+    <section class="booking-policies section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Booking Policies</h2>
+                <p>Important information for your stay</p>
+            </div>
+            <div class="policies-grid">
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Check-in/Check-out</h3>
+                    <ul>
+                        <li>Check-in: 2:00 PM - 7:00 PM</li>
+                        <li>Check-out: By 11:00 AM</li>
+                        <li>Early check-in or late check-out may be arranged upon request, subject to availability</li>
+                    </ul>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payment</h3>
+                    <ul>
+                        <li>50% deposit required to confirm booking</li>
+                        <li>Full payment due 7 days before arrival</li>
+                        <li>Payment methods: Bank transfer, online payment (cards accepted), mobile money</li>
+                    </ul>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>Cancellation</h3>
+                    <ul>
+                        <li>Full refund: 30+ days before arrival</li>
+                        <li>75% refund: 15-29 days before</li>
+                        <li>50% refund: 7-14 days before</li>
+                        <li>No refund: Less than 7 days before</li>
+                    </ul>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Children</h3>
+                    <ul>
+                        <li>Children are welcome at our retreat centre</li>
+                        <li>Children under 5 stay free when sharing with parents</li>
+                        <li>Children 5-12 years: 50% of adult rate</li>
+                        <li>Children 13+ years: Full adult rate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="booking-cta bg-accent">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Assistance With Your Booking?</h2>
+                <p>Our team is happy to help with any questions or special requirements you may have.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+2341234567890" class="btn btn-light"><i class="fas fa-phone"></i> Call Us: +234 123 456 7890</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions Modal -->
+    <div class="terms-modal" id="terms-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Terms and Conditions</h2>
+            <div class="modal-body">
+                <div class="terms-content">
+                    <h3>1. Booking and Confirmation</h3>
+                    <p>All bookings require a 50% deposit to be confirmed. Bookings are not guaranteed until deposit payment is received and confirmation is sent by the Christian Retreat Centre.</p>
+
+                    <h3>2. Payment Terms</h3>
+                    <p>Final payment is due 7 days prior to arrival. Failure to make final payment may result in cancellation of the booking without refund of deposit.</p>
+
+                    <h3>3. Cancellation Policy</h3>
+                    <p>Our cancellation policy is as follows:</p>
+                    <ul>
+                        <li>Full refund for cancellations made 30 or more days before arrival</li>
+                        <li>75% refund for cancellations 15-29 days before arrival</li>
+                        <li>50% refund for cancellations 7-14 days before arrival</li>
+                        <li>No refund for cancellations less than 7 days before arrival</li>
+                    </ul>
+
+                    <h3>4. Facility Care and Damage</h3>
+                    <p>Guests are responsible for treating the facilities with respect. Any damage caused by guests will be charged to the booking party. A security deposit may be required for certain group bookings.</p>
+
+                    <h3>5. Code of Conduct</h3>
+                    <p>As a Christian retreat centre, we expect all guests to respect the spiritual nature of our facility. This includes:</p>
+                    <ul>
+                        <li>No alcohol or illegal substances on the property</li>
+                        <li>No smoking inside any buildings (designated outdoor areas only)</li>
+                        <li>Respecting quiet hours (10:00 PM - 7:00 AM)</li>
+                        <li>Appropriate dress and conduct</li>
+                    </ul>
+
+                    <h3>6. Liability</h3>
+                    <p>The Christian Retreat Centre is not responsible for loss, theft, or damage to personal belongings. Guests are advised to take appropriate precautions.</p>
+
+                    <h3>7. Privacy Policy</h3>
+                    <p>Personal information collected during the booking process is used solely for retreat administration purposes and will not be shared with third parties except as required by law.</p>
+
+                    <h3>8. Changes to Bookings</h3>
+                    <p>Any changes to bookings must be requested in writing and are subject to availability. Significant changes may be treated as a cancellation and re-booking.</p>
+
+                    <h3>9. Force Majeure</h3>
+                    <p>The retreat centre reserves the right to cancel bookings due to unforeseen circumstances beyond our control (natural disasters, facility issues, etc.). In such cases, full refunds will be provided or alternative dates offered.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/images/Logo.jpg" alt="Christian Retreat Centre Logo">
+                        <h3>Christian Retreat Centre</h3>
+                    </div>
+                    <p>A peaceful haven for spiritual renewal and growth in Ago-Iwoye, Ikorodu, Lagos, Nigeria.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="services.html">Services & Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ago-Iwoye, Ikorodu, Lagos, Nigeria</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+234 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@christianretreatcentre.com</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Christian Retreat Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/2341234567890" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/booking.js"></script>
+</body>
+
+</html>

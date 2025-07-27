@@ -1,0 +1,407 @@
+/* 
+* Christian Retreat Centre - Home Page Styles
+*/
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+/* Welcome Section */
+.welcome-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-image {
+    flex: 1;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.welcome-image:hover img {
+    transform: scale(1.03);
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-accent);
+    color: var(--primary-color);
+    font-size: var(--font-size-xl);
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+}
+
+.service-card h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-dark);
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: var(--light-gray);
+    position: relative;
+}
+
+.testimonials-slider {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.testimonial-item.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.testimonial-content {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    font-size: var(--font-size-lg);
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.testimonial-content p::before {
+    content: '\201C';
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 60px;
+    color: var(--primary-light);
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.testimonial-author h4 {
+    font-size: var(--font-size-md);
+    margin-bottom: 0;
+    color: var(--primary-dark);
+}
+
+.testimonial-author p {
+    margin-bottom: 0;
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    font-style: normal;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.testimonial-controls button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
+}
+
+.testimonial-controls button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Inquiry Form */
+.inquiry {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.inquiry-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.inquiry-text {
+    flex: 1;
+}
+
+.inquiry-text h2 {
+    color: var(--white);
+}
+
+.inquiry-form {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* Events Section */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.event-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.event-date {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-sm);
+    text-align: center;
+    min-width: 70px;
+}
+
+.event-date .day {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+}
+
+.event-details {
+    padding: var(--spacing-md);
+}
+
+.event-details h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-dark);
+}
+
+.event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+}
+
+.event-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.event-meta span i {
+    margin-right: var(--spacing-xs);
+    color: var(--primary-color);
+}
+
+.event-description {
+    margin-bottom: var(--spacing-md);
+}
+
+.events-cta {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: var(--light-gray);
+}
+
+.newsletter-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.newsletter-text {
+    flex: 1;
+}
+
+.newsletter-form {
+    flex: 1;
+}
+
+.newsletter-input {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.newsletter-input input {
+    flex: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .welcome-content,
+    .inquiry-content,
+    .newsletter-content {
+        flex-direction: column;
+    }
+
+    .welcome-image {
+        margin-top: var(--spacing-lg);
+    }
+
+    .inquiry-text {
+        margin-bottom: var(--spacing-lg);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .event-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: var(--font-size-md);
+    }
+
+    .newsletter-input {
+        flex-direction: column;
+    }
+}

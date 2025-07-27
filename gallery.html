@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our gallery of images showcasing the beautiful grounds, facilities, and activities at Christian Retreat Centre in Ago-Iwoye, Ikorodu.">
+    <link rel="icon" href="/images/favicon.jpg" type="image/png">
+    <title>Gallery | Christian Retreat Centre</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/Logo.jpg" alt="Christian Retreat Centre Logo">
+                    <span>Christian Retreat Centre</span>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner gallery-banner">
+        <div class="banner-content">
+            <h1>Gallery</h1>
+            <p>Glimpses of our peaceful retreat environment</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="grounds">Grounds & Gardens</button>
+                <button class="filter-btn" data-filter="accommodations">Accommodations</button>
+                <button class="filter-btn" data-filter="chapels">Chapels & Meeting Spaces</button>
+                <button class="filter-btn" data-filter="activities">Activities & Events</button>
+                <button class="filter-btn" data-filter="dining">Dining & Facilities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid section">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Grounds & Gardens -->
+                <div class="gallery-item grounds" data-category="grounds">
+                    <a href="./assets/images/gallery/grounds-1.jpg" data-lightbox="retreat-gallery" data-title="Entrance to the Retreat Centre">
+                        <img src="./assets/images/gallery/grounds-1-thumb.jpg" alt="Entrance to the Retreat Centre">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Entrance</h3>
+                                <p>Welcome gate and path to the retreat centre</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item grounds" data-category="grounds">
+                    <a href="./assets/images/gallery/grounds-2.jpg" data-lightbox="retreat-gallery" data-title="Prayer Garden">
+                        <img src="./assets/images/gallery/grounds-2-thumb.jpg" alt="Prayer Garden with benches and flowers">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Prayer Garden</h3>
+                                <p>A peaceful space for meditation and prayer</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item grounds" data-category="grounds">
+                    <a href="./assets/images/gallery/grounds-3.jpg" data-lightbox="retreat-gallery" data-title="Meditation Walk">
+                        <img src="./assets/images/gallery/grounds-3-thumb.jpg" alt="Meditation walking path through trees">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Meditation Walk</h3>
+                                <p>Shaded pathway for reflective walks</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item grounds" data-category="grounds">
+                    <a href="./assets/images/gallery/grounds-4.jpg" data-lightbox="retreat-gallery" data-title="Lakeside View">
+                        <img src="./assets/images/gallery/grounds-4-thumb.jpg" alt="Small lake on the retreat property">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Lakeside</h3>
+                                <p>Peaceful water feature with seating areas</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Accommodations -->
+                <div class="gallery-item accommodations" data-category="accommodations">
+                    <a href="./assets/images/gallery/accommodation-1.jpg" data-lightbox="retreat-gallery" data-title="Private Room">
+                        <img src="./assets/images/gallery/accommodation-1-thumb.jpg" alt="Private room with single bed">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Private Room</h3>
+                                <p>Simple, comfortable accommodation for individuals</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item accommodations" data-category="accommodations">
+                    <a href="./assets/images/gallery/accommodation-2.jpg" data-lightbox="retreat-gallery" data-title="Family Suite">
+                        <img src="./assets/images/gallery/accommodation-2-thumb.jpg" alt="Family suite with multiple beds">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Family Suite</h3>
+                                <p>Spacious rooms for families or small groups</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item accommodations" data-category="accommodations">
+                    <a href="./assets/images/gallery/accommodation-3.jpg" data-lightbox="retreat-gallery" data-title="Dormitory">
+                        <img src="./assets/images/gallery/accommodation-3-thumb.jpg" alt="Dormitory room with multiple beds">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Dormitory</h3>
+                                <p>Group accommodation for youth groups or large gatherings</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item accommodations" data-category="accommodations">
+                    <a href="./assets/images/gallery/accommodation-4.jpg" data-lightbox="retreat-gallery" data-title="En-suite Bathroom">
+                        <img src="./assets/images/gallery/accommodation-4-thumb.jpg" alt="Private bathroom attached to room">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>En-suite Bathroom</h3>
+                                <p>Clean, modern facilities in private rooms</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Chapels & Meeting Spaces -->
+                <div class="gallery-item chapels" data-category="chapels">
+                    <a href="./assets/images/gallery/chapel-1.jpg" data-lightbox="retreat-gallery" data-title="Main Chapel">
+                        <img src="./assets/images/gallery/chapel-1-thumb.jpg" alt="Interior of the main chapel">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Main Chapel</h3>
+                                <p>Our largest worship space for services and conferences</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item chapels" data-category="chapels">
+                    <a href="./assets/images/gallery/chapel-2.jpg" data-lightbox="retreat-gallery" data-title="Prayer Chapel">
+                        <img src="./assets/images/gallery/chapel-2-thumb.jpg" alt="Small intimate prayer chapel">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Prayer Chapel</h3>
+                                <p>Intimate space for private prayer and small gatherings</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item chapels" data-category="chapels">
+                    <a href="./assets/images/gallery/meeting-1.jpg" data-lightbox="retreat-gallery" data-title="Conference Hall">
+                        <img src="./assets/images/gallery/meeting-1-thumb.jpg" alt="Conference hall set up for a meeting">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Conference Hall</h3>
+                                <p>Versatile space for workshops, seminars, and gatherings</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item chapels" data-category="chapels">
+                    <a href="./assets/images/gallery/meeting-2.jpg" data-lightbox="retreat-gallery" data-title="Breakout Room">
+                        <img src="./assets/images/gallery/meeting-2-thumb.jpg" alt="Small meeting room for group discussions">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Breakout Room</h3>
+                                <p>Smaller spaces for focused discussions and Bible studies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Activities & Events -->
+                <div class="gallery-item activities" data-category="activities">
+                    <a href="./assets/images/gallery/activity-1.jpg" data-lightbox="retreat-gallery" data-title="Group Worship">
+                        <img src="./assets/images/gallery/activity-1-thumb.jpg" alt="Group worship session in progress">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Group Worship</h3>
+                                <p>Visitors engaged in praise and worship</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item activities" data-category="activities">
+                    <a href="./assets/images/gallery/activity-2.jpg" data-lightbox="retreat-gallery" data-title="Outdoor Fellowship">
+                        <img src="./assets/images/gallery/activity-2-thumb.jpg" alt="Group fellowship in outdoor pavilion">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Outdoor Fellowship</h3>
+                                <p>Community gathering in our outdoor pavilion</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item activities" data-category="activities">
+                    <a href="./assets/images/gallery/activity-3.jpg" data-lightbox="retreat-gallery" data-title="Youth Retreat">
+                        <img src="./assets/images/gallery/activity-3-thumb.jpg" alt="Youth group engaged in team activities">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Youth Retreat</h3>
+                                <p>Young people participating in team-building activities</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item activities" data-category="activities">
+                    <a href="./assets/images/gallery/activity-4.jpg" data-lightbox="retreat-gallery" data-title="Evening Bonfire">
+                        <img src="./assets/images/gallery/activity-4-thumb.jpg" alt="Group gathered around evening bonfire">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Evening Bonfire</h3>
+                                <p>Testimony and fellowship time around the fire</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Dining & Facilities -->
+                <div class="gallery-item dining" data-category="dining">
+                    <a href="./assets/images/gallery/dining-1.jpg" data-lightbox="retreat-gallery" data-title="Dining Hall">
+                        <img src="./assets/images/gallery/dining-1-thumb.jpg" alt="Main dining hall with tables and chairs">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Dining Hall</h3>
+                                <p>Spacious area where guests enjoy meals together</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item dining" data-category="dining">
+                    <a href="./assets/images/gallery/dining-2.jpg" data-lightbox="retreat-gallery" data-title="Kitchen Facilities">
+                        <img src="./assets/images/gallery/dining-2-thumb.jpg" alt="Kitchen where meals are prepared">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Kitchen</h3>
+                                <p>Where our nutritious meals are lovingly prepared</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item dining" data-category="dining">
+                    <a href="/images/Library.jpg" data-lightbox="retreat-gallery" data-title="Library & Reading Room">
+                        <img src="/images/Library.jpg" alt="Library with books and comfortable seating">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Library</h3>
+                                <p>Quiet space filled with spiritual and inspirational books</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item dining" data-category="dining">
+                    <a href="./assets/images/gallery/facility-2.jpg" data-lightbox="retreat-gallery" data-title="Sports Field">
+                        <img src="./assets/images/gallery/facility-2-thumb.jpg" alt="Multi-purpose sports field">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sports Field</h3>
+                                <p>Recreational area for group activities and games</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery CTA -->
+    <section class="gallery-cta bg-light">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience Our Retreat Centre In Person</h2>
+                <p>Photos can only capture part of the peaceful atmosphere that makes our retreat centre special. We invite you to visit and experience it for yourself.</p>
+                <div class="cta-buttons">
+                    <a href="booking.html" class="btn btn-primary">Book a Stay</a>
+                    <a href="contact.html" class="btn btn-secondary">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/images/Logo.jpg" alt="Christian Retreat Centre Logo">
+                        <h3>Christian Retreat Centre</h3>
+                    </div>
+                    <p>A peaceful haven for spiritual renewal and growth in Ago-Iwoye, Ikorodu, Lagos, Nigeria.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="services.html">Services & Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ago-Iwoye, Ikorodu, Lagos, Nigeria</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+234 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@christianretreatcentre.com</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Christian Retreat Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/2341234567890" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/gallery.js"></script>
+</body>
+
+</html>
