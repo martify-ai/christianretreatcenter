@@ -2,12 +2,14 @@
 * Christian Retreat Centre - Home Page Styles
 */
 
+
 /* Hero Section */
+
 .hero {
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero.webp');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -43,7 +45,9 @@
     gap: var(--spacing-md);
 }
 
+
 /* Welcome Section */
+
 .welcome-content {
     display: flex;
     gap: var(--spacing-xl);
@@ -72,7 +76,9 @@
     transform: scale(1.03);
 }
 
+
 /* Services Section */
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,7 +123,9 @@
     margin-top: var(--spacing-xl);
 }
 
+
 /* Testimonials */
+
 .testimonials {
     background-color: var(--light-gray);
     position: relative;
@@ -139,8 +147,12 @@
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .testimonial-content {
@@ -208,7 +220,9 @@
     color: var(--white);
 }
 
+
 /* Inquiry Form */
+
 .inquiry {
     background-color: var(--primary-color);
     color: var(--white);
@@ -236,7 +250,9 @@
     box-shadow: var(--shadow-md);
 }
 
+
 /* Events Section */
+
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -318,7 +334,9 @@
     margin-top: var(--spacing-lg);
 }
 
+
 /* Newsletter Section */
+
 .newsletter {
     background-color: var(--light-gray);
 }
@@ -346,22 +364,21 @@
     flex: 1;
 }
 
+
 /* Responsive Styles */
+
 @media (max-width: 992px) {
     .hero h1 {
         font-size: 2.8rem;
     }
-
     .welcome-content,
     .inquiry-content,
     .newsletter-content {
         flex-direction: column;
     }
-
     .welcome-image {
         margin-top: var(--spacing-lg);
     }
-
     .inquiry-text {
         margin-bottom: var(--spacing-lg);
         text-align: center;
@@ -373,15 +390,12 @@
         height: auto;
         min-height: 500px;
     }
-
     .hero h1 {
         font-size: 2.5rem;
     }
-
     .hero-buttons {
         flex-direction: column;
     }
-
     .event-meta {
         flex-direction: column;
         gap: var(--spacing-xs);
@@ -392,15 +406,12 @@
     .hero {
         min-height: 400px;
     }
-
     .hero h1 {
         font-size: 2rem;
     }
-
     .hero p {
         font-size: var(--font-size-md);
     }
-
     .newsletter-input {
         flex-direction: column;
     }
