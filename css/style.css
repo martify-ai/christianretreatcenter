@@ -760,6 +760,32 @@ img {
 }
 
 
+/* Line 745-746 */
+
+.nav-menu.active {
+    display: block !important;
+    /* Added !important to ensure it overrides other styles */
+}
+
+
+/* Lines 756-764 - Enhanced the mobile menu toggle button */
+
+.mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+    /* Added cursor pointer */
+    font-size: 1.5rem;
+    /* Specified font size explicitly */
+    padding: 5px;
+    /* Added padding */
+}
+
+.mobile-menu-toggle i {
+    color: var(--primary-color);
+    /* Specified color explicitly */
+}
+
+
 /* ===== RESPONSIVE STYLES ===== */
 
 @media (max-width: 1024px) {
