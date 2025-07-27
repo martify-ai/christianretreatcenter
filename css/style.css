@@ -3,15 +3,21 @@
 * This is the main stylesheet for the Christian Retreat Centre website
 */
 
+
 /* ===== VARIABLES ===== */
+
 :root {
     /* Main Colors */
-    --primary-color: #4d7c40; /* Main Green */
-    --primary-dark: #3a5d30; /* Darker Green */
-    --primary-light: #6a9e5a; /* Lighter Green */
-    --accent-color: #7d5d3b; /* Earthy Brown */
-    --light-accent: #d4c5b3; /* Light Beige */
-    
+    --primary-color: #30be09;
+    /* Main Green */
+    --primary-dark: #193810;
+    /* Darker Green */
+    --primary-light: #6a9e5a;
+    /* Lighter Green */
+    --accent-color: #7d5d3b;
+    /* Earthy Brown */
+    --light-accent: #d4c5b3;
+    /* Light Beige */
     /* Neutral Colors */
     --white: #ffffff;
     --light-gray: #f8f9fa;
@@ -19,47 +25,59 @@
     --gray: #6c757d;
     --dark-gray: #343a40;
     --black: #212529;
-    
     /* Font Families */
     --font-heading: 'Lora', serif;
     --font-body: 'Open Sans', sans-serif;
-    
     /* Font Sizes */
-    --font-size-xs: 0.75rem;   /* 12px */
-    --font-size-sm: 0.875rem;  /* 14px */
-    --font-size-base: 1rem;    /* 16px */
-    --font-size-md: 1.125rem;  /* 18px */
-    --font-size-lg: 1.25rem;   /* 20px */
-    --font-size-xl: 1.5rem;    /* 24px */
-    --font-size-xxl: 2rem;     /* 32px */
-    --font-size-huge: 2.5rem;  /* 40px */
-    
+    --font-size-xs: 0.75rem;
+    /* 12px */
+    --font-size-sm: 0.875rem;
+    /* 14px */
+    --font-size-base: 1rem;
+    /* 16px */
+    --font-size-md: 1.125rem;
+    /* 18px */
+    --font-size-lg: 1.25rem;
+    /* 20px */
+    --font-size-xl: 1.5rem;
+    /* 24px */
+    --font-size-xxl: 2rem;
+    /* 32px */
+    --font-size-huge: 2.5rem;
+    /* 40px */
     /* Spacing */
-    --spacing-xs: 0.25rem;  /* 4px */
-    --spacing-sm: 0.5rem;   /* 8px */
-    --spacing-md: 1rem;     /* 16px */
-    --spacing-lg: 1.5rem;   /* 24px */
-    --spacing-xl: 2rem;     /* 32px */
-    --spacing-xxl: 3rem;    /* 48px */
-    
+    --spacing-xs: 0.25rem;
+    /* 4px */
+    --spacing-sm: 0.5rem;
+    /* 8px */
+    --spacing-md: 1rem;
+    /* 16px */
+    --spacing-lg: 1.5rem;
+    /* 24px */
+    --spacing-xl: 2rem;
+    /* 32px */
+    --spacing-xxl: 3rem;
+    /* 48px */
     /* Border Radius */
     --border-radius-sm: 0.25rem;
     --border-radius-md: 0.5rem;
     --border-radius-lg: 1rem;
-    
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    --shadow-md: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
-    --shadow-lg: 0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.1);
-    
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
     /* Transitions */
     --transition-fast: all 0.2s ease;
     --transition-normal: all 0.3s ease;
     --transition-slow: all 0.5s ease;
 }
 
+
 /* ===== RESET & BASE STYLES ===== */
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -79,7 +97,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 600;
     line-height: 1.3;
@@ -117,7 +140,8 @@ a:hover {
     color: var(--primary-dark);
 }
 
-ul, ol {
+ul,
+ol {
     margin-bottom: var(--spacing-md);
     padding-left: var(--spacing-lg);
 }
@@ -128,7 +152,9 @@ img {
     display: block;
 }
 
+
 /* ===== UTILITY CLASSES ===== */
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -166,7 +192,9 @@ img {
     color: var(--white);
 }
 
-.bg-accent h2, .bg-accent h3, .bg-accent h4 {
+.bg-accent h2,
+.bg-accent h3,
+.bg-accent h4 {
     color: var(--white);
 }
 
@@ -206,7 +234,9 @@ img {
     color: #d9534f;
 }
 
+
 /* ===== BUTTONS ===== */
+
 .btn {
     display: inline-block;
     font-weight: 500;
@@ -279,7 +309,9 @@ img {
     width: 100%;
 }
 
+
 /* ===== HEADER STYLES ===== */
+
 .header {
     position: fixed;
     top: 0;
@@ -366,7 +398,9 @@ img {
     cursor: pointer;
 }
 
+
 /* ===== PAGE BANNER STYLES ===== */
+
 .page-banner {
     position: relative;
     background-color: var(--primary-color);
@@ -408,7 +442,9 @@ img {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+
 /* ===== FOOTER STYLES ===== */
+
 .footer {
     background-color: var(--dark-gray);
     color: var(--white);
@@ -524,7 +560,9 @@ img {
     color: var(--gray);
 }
 
+
 /* ===== WHATSAPP BUTTON ===== */
+
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -549,7 +587,9 @@ img {
     color: white;
 }
 
+
 /* ===== FORM STYLES ===== */
+
 .form-group {
     margin-bottom: var(--spacing-md);
 }
@@ -625,7 +665,9 @@ img {
     margin-right: var(--spacing-xs);
 }
 
+
 /* ===== CTA SECTION STYLES ===== */
+
 .cta-section {
     padding: var(--spacing-xl) 0;
     text-align: center;
@@ -652,7 +694,9 @@ img {
     flex-wrap: wrap;
 }
 
+
 /* ===== MODAL STYLES ===== */
+
 .privacy-modal,
 .terms-modal,
 .event-modal {
@@ -710,11 +754,14 @@ img {
     font-size: var(--font-size-lg);
 }
 
-.modal-body p, .modal-body ul {
+.modal-body p,
+.modal-body ul {
     margin-bottom: var(--spacing-md);
 }
 
+
 /* ===== RESPONSIVE STYLES ===== */
+
 @media (max-width: 1024px) {
     .container {
         max-width: 95%;
@@ -725,11 +772,9 @@ img {
     html {
         font-size: 15px;
     }
-    
     .section {
         padding: var(--spacing-xl) 0;
     }
-    
     .nav-menu {
         display: none;
         position: absolute;
@@ -741,34 +786,27 @@ img {
         padding: var(--spacing-md);
         z-index: 1000;
     }
-    
     .nav-menu.active {
         display: block;
     }
-    
     .nav-menu ul {
         flex-direction: column;
     }
-    
     .nav-menu li {
         margin: var(--spacing-sm) 0;
         margin-left: 0;
     }
-    
     .mobile-menu-toggle {
         display: block;
     }
-    
     .footer-content {
         flex-direction: column;
     }
-    
     .footer-column {
         width: 100%;
         margin-bottom: var(--spacing-xl);
         padding-right: 0;
     }
-    
     .form-columns {
         flex-direction: column;
         gap: 0;
@@ -779,36 +817,28 @@ img {
     html {
         font-size: 14px;
     }
-    
     .btn {
         padding: var(--spacing-xs) var(--spacing-md);
     }
-    
     .page-banner {
         padding: 120px 0 80px;
     }
-    
     .page-banner h1 {
         font-size: var(--font-size-xxl);
     }
-    
     .page-banner p {
         font-size: var(--font-size-lg);
     }
-    
     .section-header h2 {
         font-size: var(--font-size-xl);
     }
-    
     .section-header p {
         font-size: var(--font-size-md);
     }
-    
     .cta-buttons {
         flex-direction: column;
         gap: var(--spacing-sm);
     }
-    
     .whatsapp-btn {
         width: 50px;
         height: 50px;
