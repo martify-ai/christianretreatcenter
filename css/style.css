@@ -8,9 +8,9 @@
 
 :root {
     /* Main Colors */
-    --primary-color: #30be09;
+    --primary-color: #2db408;
     /* Main Green */
-    --primary-dark: #193810;
+    --primary-dark: #1c4211;
     /* Darker Green */
     --primary-light: #6a9e5a;
     /* Lighter Green */
@@ -760,32 +760,6 @@ img {
 }
 
 
-/* Line 745-746 */
-
-.nav-menu.active {
-    display: block !important;
-    /* Added !important to ensure it overrides other styles */
-}
-
-
-/* Lines 756-764 - Enhanced the mobile menu toggle button */
-
-.mobile-menu-toggle {
-    display: block;
-    cursor: pointer;
-    /* Added cursor pointer */
-    font-size: 1.5rem;
-    /* Specified font size explicitly */
-    padding: 5px;
-    /* Added padding */
-}
-
-.mobile-menu-toggle i {
-    color: var(--primary-color);
-    /* Specified color explicitly */
-}
-
-
 /* ===== RESPONSIVE STYLES ===== */
 
 @media (max-width: 1024px) {
@@ -813,7 +787,7 @@ img {
         z-index: 1000;
     }
     .nav-menu.active {
-        display: block;
+        display: block !important;
     }
     .nav-menu ul {
         flex-direction: column;
@@ -824,6 +798,12 @@ img {
     }
     .mobile-menu-toggle {
         display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .mobile-menu-toggle i {
+        color: var(--primary-color);
     }
     .footer-content {
         flex-direction: column;
