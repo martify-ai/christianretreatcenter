@@ -2,12 +2,16 @@
 * Christian Retreat Centre - Contact Page Styles
 */
 
+
 /* Contact Banner */
+
 .contact-banner {
     background-color: var(--primary-color);
 }
 
+
 /* Contact Information */
+
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,7 +64,9 @@
     text-decoration: underline;
 }
 
+
 /* Contact Form */
+
 .contact-form {
     margin-bottom: var(--spacing-xxl);
 }
@@ -146,7 +152,9 @@
     cursor: pointer;
 }
 
+
 /* Map Section */
+
 .map-container {
     border-radius: var(--border-radius-md);
     overflow: hidden;
@@ -192,7 +200,9 @@
     text-align: center;
 }
 
+
 /* FAQ Section */
+
 .contact-faqs {
     margin-bottom: var(--spacing-xxl);
 }
@@ -251,7 +261,9 @@
     max-height: 500px;
 }
 
+
 /* Contact CTA */
+
 .contact-cta {
     padding: var(--spacing-xxl) 0;
     text-align: center;
@@ -276,7 +288,9 @@
     gap: var(--spacing-md);
 }
 
+
 /* Privacy Policy Modal */
+
 .privacy-modal {
     display: none;
     position: fixed;
@@ -332,12 +346,14 @@
     font-size: var(--font-size-lg);
 }
 
-.privacy-content p, 
+.privacy-content p,
 .privacy-content ul {
     margin-bottom: var(--spacing-md);
 }
 
+
 /* Responsive Styles */
+
 @media (max-width: 992px) {
     .info-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -349,16 +365,13 @@
         flex-direction: column;
         gap: 0;
     }
-    
     .directions-content {
         flex-direction: column;
     }
-    
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
     .info-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
